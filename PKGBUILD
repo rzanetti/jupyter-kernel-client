@@ -19,17 +19,17 @@ depends=(
     'python-typing_extensions'
     'python-websocket-client'
 )
-source=(
-    "jupyter_kernel_client-$pkgver.tar.gz::https://files.pythonhosted.org/packages/source/g/jupyter-kernel-client/jupyter_kernel_client-$pkgver.tar.gz"
+makedepends=(
+    'python-installer'
 )
-sha256sums=('SKIP')
-
-build() {
-    cd "jupyter_kernel_client-$pkgver"
-    python -m build --wheel --no-isolation
-}
-
+source=(
+    "jupyter_kernel_client-$pkgver-py3-none-any.whl::https://files.pythonhosted.org/packages/7a/68/287315ba355aa93bda2e344de5febc45e6de1b47d8f4a5b69400b24cfdfd/jupyter_kernel_client-$pkgver-py3-none-any.whl"
+)
+sha256sums=(
+    '77acb8f2f738d97625d6bd01ee8cf21c4d59790b7ba464108712db3870416f20'
+)
 package() {
-    cd "jupyter_kernel_client-$pkgver"
-    python -m installer --destdir="$pkgdir" dist/*.whl
+    python -m installer \
+        --destdir="$pkgdir" \
+        "jupyter_kernel_client-$pkgver-py3-none-any.whl"
 }
