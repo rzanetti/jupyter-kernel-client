@@ -29,6 +29,13 @@ depends=(
     'python-websocket-client'
 )
 
+optdepends=(
+    'jupyter-console: interactive terminal console (REPL for kernels)'
+    'python-numpy: for running the upstream test suite'
+    'python-pandas: for running the upstream test suite'
+    'python-pytest: for running the upstream test suite'
+)
+
 makedepends=('python-installer')
 
 source=(

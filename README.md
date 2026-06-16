@@ -1,12 +1,12 @@
 # Jupyter Kernel Client PKGBUILD
 
-[Jupyter](https://jupyter.org) Kernel Client allows you to connect to live Jupyter Kernels through [HTTP](https://ietf.org) and [WebSocket](https://whatwg.org). (`PKGBUILD` package wrapper).
+The [Jupyter Kernel Client](https://github.com/datalayer/jupyter-kernel-client) allows you to connect to live Jupyter Kernels through HTTP and WebSocket.
 
 ## Why this package exists?
 
-This repository provides an [Arch Linux](https://archlinux.org) `PKGBUILD` for software that is not currently available in the [official repositories](https://wiki.archlinux.org/title/Official_repositories) or the [AUR](https://wiki.archlinux.org/title/Arch_User_Repository).
+This repository provides an [Arch Linux](https://archlinux.org) `PKGBUILD` for software that is not currently available in the [official repositories](https://wiki.archlinux.org/title/Official_repositories).
 
-The goal is to make installation reproducible, auditable and compatible with standard Arch Linux packaging practices.
+The goal is to make installation reproducible, auditable, and compatible with standard Arch Linux packaging practices.
 
 ## Upstream project
 
@@ -25,7 +25,7 @@ Upstream source code:
 ## Installation
 
 ```bash
-git clone git clone https://aur.archlinux.org/python-jupyter-kernel-client.git
+git clone https://aur.archlinux.org/python-jupyter-kernel-client.git
 cd python-jupyter-kernel-client
 makepkg -si
 ```
@@ -34,6 +34,6 @@ makepkg -si
 
 The `PKGBUILD` tracks upstream releases published on [PyPI](https://pypi.org/project/jupyter-kernel-client).
 
-Issues related to the packaged software itself should be reported [upstream](https://pypi.org/project/jupyter-kernel-client).
+Issues related to the packaged software itself should be reported [upstream](https://github.com/datalayer/jupyter-kernel-client).
 
 Issues related to Arch Linux packaging can be reported in this repository.
